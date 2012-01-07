@@ -1,0 +1,242 @@
+body {
+  background: url(../img/bkg.jpg) #d4c7c1;
+  color: #263236;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+a{
+  color: #0994B2;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #14ABCC;
+  text-decoration: underline;
+}
+
+header, section, footer{
+  margin: 0 auto;
+}
+
+header{
+  margin: 25px auto;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 0;
+  width: 745px;
+}
+
+header .logo{
+  color: #B21251;
+  font-family: 'Molengo', Helvetica, arial, serif;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .logo:hover{
+  color: #ff0065;
+  text-decoration: none;
+}
+
+header h2{
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+section{
+  width: 745px;
+}
+
+aside{
+  clear: both;
+  margin: 0 auto;
+  width: 745px;
+}
+
+footer{
+  clear: both;
+  margin: 20px auto;
+  text-align: right;
+  width: 960px;
+}
+
+/* Page with the model of compound */
+.compound-item article{
+  background: #ffffff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 4px #DEDEDE;
+  -moz-box-shadow: 1px 1px 4px #DEDEDE;
+  box-shadow: 1px 1px 4px #DEDEDE;
+  min-height: 200px;
+  float: left;
+  padding: 10px;
+  position: relative;
+  width: 745px;
+}
+
+.compound-item h1{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.formula b{
+  font-size: 50%;
+}
+
+.compound-item nav[role=canvas-content] {
+  text-align: right;
+}
+
+.compound-item nav[role=canvas-content] a{
+  display: inline-block;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+.compound-item nav[role=canvas-content] a.active{
+  color: #263236;
+  font-weight: bold;
+}
+
+.compound-item aside{
+  background: none repeat scroll 0 0 #FCFCFC;
+  border: 1px solid #DEDEDE;
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: auto;
+}
+
+/* Compound carousel with links to view specific compound */
+.compound-list{
+  margin-top: 40px;
+}
+
+.compound-list .item {
+  float: left;
+  height: 195px;
+  margin-bottom: 20px;
+  width: 195px;
+}
+
+.compound-list .item a{
+  background-color: #fcfcfc;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 4px #DEDEDE;
+  -moz-box-shadow: 1px 1px 4px #DEDEDE;
+  box-shadow: 1px 1px 4px #DEDEDE;
+  color: #B21251;
+  display: block;
+  height: 89%;
+  margin-right: 20px;
+  width: 178px;
+}
+
+.compound-list .item.o2 a{
+  background: url(../img/mol/o2.jpg) center center no-repeat;
+}
+
+.compound-list .item.co2 a{
+  background: url(../img/mol/co2.jpg) center center no-repeat;
+}
+
+.compound-list .item.al2o3 a{
+  background: url(../img/mol/al2o3.jpg) center center no-repeat;
+}
+
+.compound-list .item.nh3 a{
+  background: url(../img/mol/nh3.jpg) center center no-repeat;
+}
+
+.compound-list .item.hcl a{
+  background: url(../img/mol/hcl.jpg) center center no-repeat;
+}
+
+.compound-list .item.h2so4 a{
+  background: url(../img/mol/h2so4.jpg) center center no-repeat;
+}
+
+.compound-list .item.naoh a{
+  background: url(../img/mol/naoh.jpg) center center no-repeat;
+}
+
+.compound-list .item.caoh2 a{
+  background: url(../img/mol/caoh2.jpg) center center no-repeat;
+}
+
+.compound-list .item.caco3 a{
+  background: url(../img/mol/caco3.jpg) center center no-repeat;
+}
+
+.compound-list .item.c2h6 a{
+  background: url(../img/mol/c2h6.jpg) center center no-repeat;
+}
+
+.compound-list .item.ch3oh a{
+  background: url(../img/mol/ch3oh.jpg) center center no-repeat;
+}
+
+.compound-list .item.hcooh a{
+  background: url(../img/mol/hcooh.jpg) center center no-repeat;
+}
+
+.compound-list .item.hooccooh a{
+  background: url(../img/mol/hooccooh.jpg) center center no-repeat;
+}
+
+.compound-list .item.c6h6 a{
+  background: url(../img/mol/c6h6.jpg) center center no-repeat;
+}
+
+.compound-list .item a:hover{
+  border-color: #B21251;
+  text-decoration: none;
+}
+
+.compound-list .item a.active{
+  border-color: #B21251;
+}
+
+.compound-list .item h6{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Carousel controls */
+/*next button*/
+.bx-next {
+  font-size: 24px;
+  position: absolute;
+  top: 115px;
+  right: -5px;
+  z-index: 999;
+}
+
+/*previous button*/
+.bx-prev {
+  font-size: 24px;
+  position:absolute;
+  top: 115px;
+  left: -25px;
+  z-index: 999;
+}
+
+.bx-next:hover, .bx-prev:hover{
+  opacity: 0.8;
+  text-decoration: none;
+}

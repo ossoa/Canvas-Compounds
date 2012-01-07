@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 & Canvas</title>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+    
+    <link href="http://fonts.googleapis.com/css?family=Molengo" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lte IE 8]>
+      <script src="js/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1 class="logo">HTML5 & Canvas</h1>
+        <h2>Let's have fun with Canvas</h2>
+      </hgroup>
+    </header>
+    
+    <section class="compound-item">
+      <article>
+        <h1>
+          Oxygen
+          <span class="formula">O<b>2</b></span>
+        </h1>
+      
+        <canvas id="canvas" width="700" height="300">
+          Sorry, this demo requires a web browser which supports HTML5 canvas!
+        </canvas>
+        <canvas id="canvas3d" width="700" height="400" style="display:none">
+          Sorry, this demo requires a web browser which supports HTML5 canvas!
+        </canvas>
+        <aside class="for-3d">
+          <p>Mouse - rotate</p>
+          <p>Mouse + ctrl (cmd) + shift - zoom in/zoom out</p>
+        </aside>
+      
+      </article>
+      <nav role="canvas-content">
+        <a href="" class="simple-formula">simple chemical formula</a>
+        <a href="" class="formula-2d">2D model</a>
+        <a href="" class="formula-3d">3D model</a>
+      </nav>
+    </section>
+    
+    <aside>
+      <ul class="compound-list" id="compound-carousel"> 
+        <li class="item o2"><a href="#o2"><h6>Oxygen</h6></a></li>
+        <li class="item co2"><a href="#co2"><h6>Carbon dioxide</h6></a></li>
+        <li class="item al2o3"><a href="#al2o3"><h6>Aluminium oxide</h6></a></li>
+        <li class="item nh3"><a href="#nh3"><h6>Ammonia</h6></a></li>
+        <li class="item hcl"><a href="#hcl"><h6>Hydrochloride</h6></a></li>
+        <li class="item naoh"><a href="#naoh"><h6>Sodium hydroxide</h6></a></li>
+        <li class="item h2so4"><a href="#h2so4"><h6>Sulfuric Acid</h6></a></li>
+        <li class="item caoh2"><a href="#caoh2"><h6>Calcium hydroxide</h6></a></li>
+        <li class="item caco3"><a href="#caco3"><h6>Calcium carbonate</h6></a></li>
+        <li class="item c2h6"><a href="#c2h6"><h6>Ethane</h6></a></li>
+        <li class="item ch3oh"><a href="#ch3oh"><h6>Methanol</h6></a></li>
+        <li class="item hcooh"><a href="#hcooh"><h6>Formic acid</h6></a></li>
+        <li class="item hooccooh"><a href="#hooccooh"><h6>Oxalic acid</h6></a></li>
+        <li class="item c6h6"><a href="#c6h6"><h6>Benzene</h6></a></li>
+      </ul>
+    </aside>
+           
+    <footer>
+      <a href="http://aboutagirl.pl">aboutagirl.pl</a> &copy; 2010-2011
+    </footer>
+    
+    <!-- JS for 3D canvas -->
+    <script src="js/pre3d/pre3d.js"></script>
+    <script src="js/pre3d/pre3d_shape_utils.js"></script>
+    <script src="js/pre3d/demo_utils.js"></script>
+    
+    <script src="js/canvascompound.js"></script>
+    <script src="js/elements.js"></script>
+    <script src="js/compounds.js"></script>
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-16196119-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>  
+</html>    
